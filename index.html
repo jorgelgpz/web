@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,81 @@
     <link rel="icon" href="imagenes/favicon.jpg" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="css/miestilos.css">
 </head>
+
 <body>
-    <div>
+    <div class="titulo">
         <header>
-            Este es el título
+            Inicio
         </header>
     </div>
-   
+
     <main>
-    
-        <div>
+
+        <div id="navegacion">
             <nav>
-                Principal | Fotos | Videos | Contacto
+                <a href="index.html"> Inicio </a> | 
+                <a href="fotos.html"> Fotos </a> | 
+                <a href="videos.html"> Videos </a> | 
+                <a href="contacto.html"> Contacto </a>
             </nav>
         </div>
         <!-- el atributo id es para identicar la 
         etiqueta de manera unica -->
         <div id="noticias">
-            Artículos
+            <span>
+                Artículos
+            </span>
         </div>
         <!-- el atributo class es un identificador de grupo-->
         <div class="noticiaslocales">
-            Cita del artículo uno
-            Cita del artículo dos
+            <p>
+                Cita del artículo uno
+            </p>
+            <p>
+                Cita del artículo dos
+            </p>
         </div>
         <div class="noticiaslocales">
-            Cita del artículo tres
-            Cita del artículo cuatro
+            <p>
+                Cita del artículo tres
+            </p>
+            <p>
+                Cita del artículo cuatro
+            </p>
+        </div>
+        <div>
+            <h1>
+                Libros
+            </h1>
+            <div id="libro">
+                <div class="libros">Libro: IT, Stephen King</div> 
+                <div class="libros">Libro: Carrie, Stephen King</div> 
+                <div class="libros">Libro: El resplandor, Stephen King</div> 
+                <div class="libros">Libro: Misery, Stephen King</div> 
+            </div>
         </div>
 
-    
+        <div>
+            <h2>Etiqueta parrafo</h2>
+            <p>
+                La muerte es una quimera: porque mientras yo existo, no existe la 
+                muerte; 
+                 y cuando existe la muerte, ya no existo yo. 
+                 Epicuro de Samos 
+            </p>
+
+            <h2>Etiqueta pre</h2>
+            <pre>
+                La muerte es una quimera: porque mientras yo existo, no existe la 
+                muerte; 
+                 y cuando existe la muerte, ya no existo yo. 
+                 Epicuro de Samos -
+            </pre>
+        </div>
+
+
     </main>
-    
-    </body>
-    </html>
+
+</body>
+
+</html>
