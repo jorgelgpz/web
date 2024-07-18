@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="icon" href="imagenes/favicon.jpg" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="css/miestilos.css">
 </head>
+
 <body>
     <div class="titulo">
         <header>
@@ -16,13 +18,104 @@
     <main>
         <div id="navegacion">
             <nav>
-                <a href="index.html"> Inicio </a> | 
-                <a href="fotos.html"> Fotos </a> | 
-                <a href="videos.html"> Videos </a> | 
+                <a href="index.html"> Inicio </a> |
+                <a href="fotos.html"> Fotos </a> |
+                <a href="videos.html"> Videos </a> |
                 <a href="contacto.html"> Contacto </a>
             </nav>
         </div>
-    </main>
 
+        <h3>Información Personal</h3>
+        <br />
+        <div>
+            <form id="contacto" name="formulario" method="get" action="procesar.html">
+                <p>
+                    <label for="nombre">Nombre:
+                        <!-- <input>—Este elemento crea un campo de entrada. -->
+                        <!-- maxlength—Este atributo especifica el máximo número de caracteres que se permite introducir en el campo. -->
+                        <input type="text" name="nombre" maxlength="15" id="nombre">
+                    </label>
+                </p>
+                <p>
+                    <label for="clave">Clave:
+                        <!-- <input>—Este elemento crea un campo de entrada. -->
+                        <input type="password" name="clave" maxlength="15" id="clave">
+                    </label>
+                </p>
+                <!-- 
+                    min —El valor de este atributo determina 
+                    el valor mínimo que acepta el campo. 
+                    max —El valor de este atributo determina 
+                    el valor máximo que acepta el campo.  -->
+                <p>
+                    <label>
+                        Edad: <input type="number" min="13" max="100" name="edad">
+                    </label>
+                </p>
+
+                <!-- range —Este valor genera un campo de entrada para
+                  insertar un rango de números.  -->
+                <p>
+                    <label>
+                        Estatura: <input type="range" min="50" max="300" name="estatura" value="250">
+                    </label>
+                </p>
+
+                <!-- email —Este valor genera un campo de entrada 
+                 para insertar cuentas de correo.  -->
+                <p>
+                    <label>Correo: <input type="email" name="correo">
+                    </label>
+                </p>
+                <!-- tel —Este valor genera un campo de entrada 
+                 para insertar números de teléfono.  -->
+                <p>
+                    <label>Teléfono: <input type="tel" name="telefono" placeholder="506-8765-4321">
+                    </label>
+                </p>
+                <!-- url—Este valor genera un campo de entrada
+                  para insertar URL.  -->
+                <p>
+                    <label>Sitio Web: <input type="url" name="sitioweb">
+                    </label>
+                </p>
+                <div>
+                    <h3>
+                        Años de experiencia:
+                    </h3>
+
+                    <!-- radio—Este valor genera un botón de 
+                     opción para seleccionar una opción de varias posibles. -->
+                    <p>
+                        <label>Experiencia:
+                            <input type="radio" name="experiencia" 
+                            value="1" checked> 1 Año
+
+                            <input type="radio" name="experiencia" 
+                            value="2" > 2 Años
+
+                            <input type="radio" name="experiencia" 
+                            value="3" > 3 Años
+
+                            <input type="radio" name="experiencia" 
+                            value="más de 3" > Más de 3 Años
+                        </label>
+                    </p>
+                    <br/>
+                    <br/>
+                    <br/>   
+                    sdf
+                </div>
+
+
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <address>Alajuela, Costa Rica</address>
+        <small>&copy; Derechos Reservados 2024</small>
+    </footer>
 </body>
+
 </html>
